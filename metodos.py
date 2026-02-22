@@ -1,4 +1,3 @@
-!pip install lxml
 from lxml import etree
 from google.colab import files
 import pandas as pd
@@ -155,4 +154,5 @@ def plotar_corrente(df, df_configdf, y_min=None, y_max=None):
   plt.title('Corrente - ' + df_config['Card'].iloc[0])
   plt.grid(True)
   plt.plot(df['f'], df['Ix'])
+
   plt.show()
